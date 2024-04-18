@@ -6,6 +6,7 @@
         <p>Fast food restoran Halal Delights zamišljen je kao tradicionalan ugostiteljski objekat koji nudi
 specijalizovanu lepezu toplih I hladnih napitaka I hrane koja je u skladu sa prehrambenim pravilima
 Islamske zajednice u Srbiji.</p>
+        <p class=" chiller">Pogodite ko je radio CSS (: <br /> I mrzi ga iz dna duse</p>
         
     </main>
 </asp:Content>

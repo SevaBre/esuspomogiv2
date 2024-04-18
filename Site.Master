@@ -13,6 +13,7 @@
     </asp:PlaceHolder>
     <webopt:bundlereference runat="server" path="~/Content/css" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="~/Content/nikadvisenadamse.css" rel="stylesheet" />
 
 </head>
 <body>
@@ -75,7 +76,7 @@
             <hr />
             <footer>
                 <p>&copy; <%: DateTime.Now.Year %> Halal Delights</p>
-                <p>OVAJ SAJT JE NAPRAVLJEN ZA POTREBE ODBRANE PROJEKTA U SKOLI, HALAL DELIGHTS NIJE STVARNA KOMPANIJA, IDEJA ZA SAJT JE DOSLA NA OSNOVU BIZNIS PLANA KOJI SAM RADIO ISTO ZA SKOLU, SVAKA SLICNOST SA STVARNIM KOMPANIJAMA JE SLUCAJNA</p>
+                <p class=" nesto">OVAJ SAJT JE NAPRAVLJEN ZA POTREBE ODBRANE PROJEKTA U SKOLI, HALAL DELIGHTS NIJE STVARNA KOMPANIJA, IDEJA ZA SAJT JE DOSLA NA OSNOVU BIZNIS PLANA KOJI SAM RADIO ISTO ZA SKOLU, SVAKA SLICNOST SA STVARNIM KOMPANIJAMA JE SLUCAJNA</p>
             </footer>
         </div>
     </form>

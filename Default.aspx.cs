@@ -34,6 +34,7 @@ namespace esuspomogiv2
                 }
                 GridView1.DataSource=proizvodi;
                 GridView1.DataBind();
+
             }
             catch (Exception ex)
             {
