@@ -42,21 +42,21 @@ namespace esuspomogiv2.Logic
             var appUser = new ApplicationUser
             //dajemo username i email korisniku, ako nisu isti, mozda nece hteti da se uloguje
             {
-                UserName = "admin@university.com",
-                Email = "admin@university.com"
+                UserName = "admin@halaldelights.com",
+                Email = "admin@halaldelights.com"
             };
             //IdUserResult = userMgr.Create(appUser, ConfigurationManager.AppSettings["AppUserPasswordKey"]);
             /*korisniku dajemo sifru, mora da ima bar jedno malo i bar jedno veliko slovo,
              * jednu cifru i jedan karakter koji nije alfanumericki(nije slovo niti cifra)
             
             */
-            IdUserResult = userMgr.Create(appUser, "adminPass1!");
+            IdUserResult = userMgr.Create(appUser, "Halal1!");
 
             // If the new "canEdit" user was successfully created, 
             // add the "canEdit" user to the "canEdit" role. 
-            if (!userMgr.IsInRole(userMgr.FindByEmail("admin@university.com").Id, "canEdit"))
+            if (!userMgr.IsInRole(userMgr.FindByEmail("admin@halaldelights.com").Id, "canEdit"))
             {
-                IdUserResult = userMgr.AddToRole(userMgr.FindByEmail("admin@university.com").Id, "canEdit");
+                IdUserResult = userMgr.AddToRole(userMgr.FindByEmail("admin@halaldelights.com").Id, "canEdit");
             }
         }
     }

@@ -5,18 +5,23 @@
   [JedinicaMere] nvarchar(10) not null,
   [Kolicina] int not null,
   [Cena] float(2) not null,
+  [Slika] nvarchar(50),
   Constraint [PK_dbo.PROIZVODI] primary key clustered([ProizvodID] asc)
 );
 
-insert into PROIZVODI(Naziv, JedinicaMere, Kolicina,Cena)
-        values ('Kafa','kom.','30','109.99');
-insert into PROIZVODI(Naziv, JedinicaMere, Kolicina,Cena)
-        values ('Voda','kom.','30','100');
-insert into PROIZVODI(Naziv, JedinicaMere, Kolicina,Cena)
-        values ('Caj','kom.','10','100');
-insert into PROIZVODI(Naziv, JedinicaMere, Kolicina,Cena)
-        values ('Pileca saurama mala','kom.','15','440');
-insert into PROIZVODI(Naziv, JedinicaMere, Kolicina,Cena)
-        values ('Pileca saurama velika','kom.','15','600');
-insert into PROIZVODI(Naziv, JedinicaMere, Kolicina,Cena)
-        values ('Pileci Kebab','kom.','15','380.0');
+insert into PROIZVODI(Naziv, JedinicaMere, Kolicina,Cena,Slika)
+        values ('Kafa','kom.','30','109.99','coffee.jpg');
+insert into PROIZVODI(Naziv, JedinicaMere, Kolicina,Cena,Slika)
+        values ('Voda','kom.','30','100','water.jpg');
+insert into PROIZVODI(Naziv, JedinicaMere, Kolicina,Cena,Slika)
+        values ('Caj','kom.','10','100','tea.jpg');
+insert into PROIZVODI(Naziv, JedinicaMere, Kolicina,Cena,Slika)
+        values ('Pileca saurama mala','kom.','15','440','shawarama.jpg');
+insert into PROIZVODI(Naziv, JedinicaMere, Kolicina,Cena,Slika)
+        values ('Pileca saurama velika','kom.','15','600','shawarama.jpg');
+insert into PROIZVODI(Naziv, JedinicaMere, Kolicina,Cena,Slika)
+        values ('Pileci Kebab','kom.','15','380.0','kebab.jpg');
+insert into PROIZVODI(Naziv, JedinicaMere, Kolicina,Cena,Slika)
+        values ('Humus','kom.','15','330.0','hummus.jpg');
+insert into PROIZVODI(Naziv, JedinicaMere, Kolicina,Cena,Slika)
+        values ('Falafel','kom.','15','49.99','falafel.jpg');

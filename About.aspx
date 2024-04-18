@@ -2,8 +2,10 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <main aria-labelledby="title">
-        <h2 id="title"><%: Title %>.</h2>
-        <h3>Your application description page.</h3>
-        <p>Use this area to provide additional information.</p>
+        <h2 id="title">O Halal Delightsu</h2>
+        <p>Fast food restoran Halal Delights zamišljen je kao tradicionalan ugostiteljski objekat koji nudi
+specijalizovanu lepezu toplih I hladnih napitaka I hrane koja je u skladu sa prehrambenim pravilima
+Islamske zajednice u Srbiji.</p>
+        
     </main>
 </asp:Content>
