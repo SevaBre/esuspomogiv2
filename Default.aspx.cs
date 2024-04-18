@@ -16,6 +16,11 @@ namespace esuspomogiv2
         List<Proizvod> proizvodi = new List<Proizvod>();
         protected void Page_Load(object sender, EventArgs e)
         {
+            ucitaj();
+        }
+
+        void ucitaj()
+        {
             try
             {
                 SqlConnection con = new SqlConnection(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=HalalDelights;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
@@ -28,11 +33,11 @@ namespace esuspomogiv2
                     SqlDataReader reader = cmd.ExecuteReader();
                     while (reader.Read())
                     {
-                        Proizvod p = new Proizvod(reader[0].ToString(), reader[1].ToString(), int.Parse(reader[2].ToString()), float.Parse(reader[3].ToString()), "~/Pictures/"+reader[4].ToString());
+                        Proizvod p = new Proizvod(reader[0].ToString(), reader[1].ToString(), int.Parse(reader[2].ToString()), float.Parse(reader[3].ToString()), "~/Pictures/" + reader[4].ToString());
                         proizvodi.Add(p);
                     }
                 }
-                GridView1.DataSource=proizvodi;
+                GridView1.DataSource = proizvodi;
                 GridView1.DataBind();
 
             }

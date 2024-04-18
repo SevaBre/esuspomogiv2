@@ -16,6 +16,15 @@ namespace esuspomogiv2
             Cena = cena;
             Slika = slika;
         }
+        public Proizvod(string naziv, string jedinicaMere, int kolicina, float cena, string slika,int id)
+        {
+            Naziv = naziv;
+            JedinicaMere = jedinicaMere;
+            Kolicina = kolicina;
+            Cena = cena;
+            Slika = slika;
+            ID = id;
+        }
         public Proizvod()
         {
             
@@ -26,6 +35,7 @@ namespace esuspomogiv2
         public int Kolicina {  get; set; }
         public float Cena {  get; set; }
         public string Slika {  get; set; }
+        public int ID {  get; set; }
 
         
     }
