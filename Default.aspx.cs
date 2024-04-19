@@ -33,7 +33,7 @@ namespace esuspomogiv2
                     SqlDataReader reader = cmd.ExecuteReader();
                     while (reader.Read())
                     {
-                        Proizvod p = new Proizvod(reader[0].ToString(), reader[1].ToString(), int.Parse(reader[2].ToString()), float.Parse(reader[3].ToString()), "~/Pictures/" + reader[4].ToString());
+                        Proizvod p = new Proizvod(reader[0].ToString(), reader[1].ToString(), reader[2].ToString(), reader[3].ToString(), "~/Pictures/" + reader[4].ToString());
                         proizvodi.Add(p);
                     }
                 }

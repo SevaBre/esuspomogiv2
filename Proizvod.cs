@@ -8,7 +8,7 @@ namespace esuspomogiv2
 {
     public class Proizvod
     {
-        public Proizvod(string naziv, string jedinicaMere, int kolicina, float cena, string slika)
+        public Proizvod(string naziv, string jedinicaMere, string kolicina, string cena, string slika)
         {
             Naziv = naziv;
             JedinicaMere = jedinicaMere;
@@ -16,7 +16,7 @@ namespace esuspomogiv2
             Cena = cena;
             Slika = slika;
         }
-        public Proizvod(string naziv, string jedinicaMere, int kolicina, float cena, string slika,int id)
+        public Proizvod(string naziv, string jedinicaMere, string kolicina, string cena, string slika,string id)
         {
             Naziv = naziv;
             JedinicaMere = jedinicaMere;
@@ -32,10 +32,10 @@ namespace esuspomogiv2
 
         public string Naziv {  get; set; }
         public string  JedinicaMere{ get; set; }
-        public int Kolicina {  get; set; }
-        public float Cena {  get; set; }
+        public string Kolicina {  get; set; }
+        public string Cena {  get; set; }
         public string Slika {  get; set; }
-        public int ID {  get; set; }
+        public string ID {  get; set; }
 
         
     }

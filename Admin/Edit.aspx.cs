@@ -34,7 +34,7 @@ namespace esuspomogiv2.Admin
                     SqlDataReader reader = cmd.ExecuteReader();
                     while (reader.Read())
                     {
-                        Proizvod p = new Proizvod(reader[0].ToString(), reader[1].ToString(), int.Parse(reader[2].ToString()), float.Parse(reader[3].ToString()), "~/Pictures/" + reader[4].ToString(), int.Parse(reader[5].ToString()));
+                        Proizvod p = new Proizvod(reader[0].ToString(), reader[1].ToString(),reader[2].ToString(), reader[3].ToString(), "~/Pictures/" + reader[4].ToString(), reader[5].ToString());
                         proizvodi.Add(p);
                     }
                     reader.Close();
@@ -85,24 +85,43 @@ namespace esuspomogiv2.Admin
                     using (con)
                     {
                         con.Open();
-                        string query = "Delete from PROIZVODI where ProizvodID=@ID";
+                        string query = "Update PROZIVODI SET Naziv=@Naziv,JedinicaMere=@JM,Kolicina=@Kol,Cena=@Cena,Slika=@Slika where ProizvodID=@ID";
                         SqlParameter p1 = new SqlParameter();
                         p1.Value = int.Parse(TextBox12.Text);
                         p1.ParameterName = "@ID";
+                        SqlParameter p2 = new SqlParameter();
+                        p1.Value = int.Parse(TextBox12.Text);
+                        p1.ParameterName = "@Naziv";
+                        SqlParameter p3 = new SqlParameter();
+                        p1.Value = int.Parse(TextBox12.Text);
+                        p1.ParameterName = "@JM";
+                        SqlParameter p4 = new SqlParameter();
+                        p1.Value = int.Parse(TextBox12.Text);
+                        p1.ParameterName = "@Kol";
+                        SqlParameter p5 = new SqlParameter();
+                        p1.Value = int.Parse(TextBox12.Text);
+                        p1.ParameterName = "@Cena";
+                        SqlParameter p6 = new SqlParameter();
+                        p1.Value = int.Parse(TextBox12.Text);
+                        p1.ParameterName = "@Slika";
                         SqlCommand cmd = new SqlCommand(query, con);
                         cmd.Parameters.Add(p1);
+                        cmd.Parameters.Add(p2);
+                        cmd.Parameters.Add(p3);
+                        cmd.Parameters.Add(p4);
+                        cmd.Parameters.Add(p5);
+                        cmd.Parameters.Add(p6);
 
                         cmd.ExecuteNonQuery();
 
 
                     }
-                    Del.Text = "";
-                    TextBox12.Text = "";
+                    
                     ucitaj();
                 }
                 else
                 {
-                    Del.Text = "ID > 0 i da nije prazno";
+                    
                 }
             }
             catch (Exception ex)

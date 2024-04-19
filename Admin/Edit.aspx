@@ -41,9 +41,9 @@
 
 
 
-        ID<asp:TextBox ID="TextBox6" runat="server" TextMode="Number"></asp:TextBox><br />
+        ID<asp:TextBox ID="TextBox6" runat="server" TextMode="Number"></asp:TextBox><asp:Button ID="Button5" runat="server" Text="Ucitaj ID" OnClick="Button5_Click" /><<br />
 
-        Naziv<asp:TextBox ID="TextBox7" runat="server"></asp:TextBox> <asp:Button ID="Button5" runat="server" Text="Ucitaj ID" OnClick="Button5_Click" /><br />
+        Naziv<asp:TextBox ID="TextBox7" runat="server"></asp:TextBox> <br />
 
         Jedinica mere<asp:TextBox ID="TextBox8" runat="server"></asp:TextBox><br />
 
