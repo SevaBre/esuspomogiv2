@@ -71,8 +71,6 @@ footer {
     background-color: #5C4033;
     color: #F3F1E7;
     text-align: center;
-    padding: 1rem 0;
-    position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -95,3 +93,5 @@ footer {
         flex-direction: column;
     }
 }
+
+

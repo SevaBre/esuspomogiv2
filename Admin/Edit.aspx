@@ -19,56 +19,28 @@
     </Columns>
 </asp:GridView>
     <br />
-    <asp:Button ID="Button1" runat="server" Text="Panel" OnClick="Button1_Click"/>
-    <br />
+
     <asp:Panel ID="Panel1" runat="server">
+
+        <h2>Admin mora da zna sta radi, nije dzabe dobio admin privilegije</h2>
         
-        <br />
-        Naziv<asp:TextBox ID="TextBox1" runat="server"></asp:TextBox><br />
-
-        Jedinica mere<asp:TextBox ID="TextBox2" runat="server"></asp:TextBox><br />
-
-        Cena<asp:TextBox ID="TextBox3" runat="server" TextMode="Number"></asp:TextBox><br />
-
-        Kolicina<asp:TextBox ID="TextBox4" runat="server" TextMode="Number"></asp:TextBox><br />
-
-        Slika<asp:TextBox ID="TextBox5" runat="server"></asp:TextBox><br />
-        <br />
-        <asp:Button ID="Button2" runat="server" Text="INSERT" OnClick="Button2_Click" />
-        <br /><br /><br />
 
 
+        ID<asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>(int, koristi se za EDIT i DELETE)<br />
+        NAZIV<asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>(string, koristi se za INSERT i UPDATE)<br />
+        JEDINICA MERA<asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>(string, koristi se za INSERT i UPDATE)<br />
+        KOLICINA<asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>(int, koristi se za INSERT i UPDATE)<br />
+        CENA<asp:TextBox ID="TextBox5" runat="server"></asp:TextBox>(float,decimale se odvajaju sa ',' , koristi se za INSERT i UPDATE)<br />
+        SLIKA<asp:TextBox ID="TextBox6" runat="server"></asp:TextBox> (string, samo naziv ex: kebab.jpg , koristi se za INSERT i UPDATE)<br />
 
-
-
-        ID<asp:TextBox ID="TextBox6" runat="server" TextMode="Number"></asp:TextBox><asp:Button ID="Button5" runat="server" Text="Ucitaj ID" OnClick="Button5_Click" /><<br />
-
-        Naziv<asp:TextBox ID="TextBox7" runat="server"></asp:TextBox> <br />
-
-        Jedinica mere<asp:TextBox ID="TextBox8" runat="server"></asp:TextBox><br />
-
-        Cena<asp:TextBox ID="TextBox9" runat="server" TextMode="Number"></asp:TextBox><br />
-
-        Kolicina<asp:TextBox ID="TextBox10" runat="server" TextMode="Number"></asp:TextBox><br />
-
-        Slika<asp:TextBox ID="TextBox11" runat="server"></asp:TextBox><br />
-        <br />
-        <asp:Button ID="Button3" runat="server" Text="Update" OnClick="Button3_Click"/>
-        <br /><br /><br />
-
-
-
-
-
-        ID<asp:TextBox ID="TextBox12" runat="server" TextMode="Number"></asp:TextBox ><br />
-
-        <br />
-        <asp:Label ID="Del" runat="server" Text=""></asp:Label>
-        <asp:Button ID="Button4" runat="server" Text="Delete" OnClick="Button4_Click" />
-
+        <br /><br />
+        <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Insert" />
+        <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="Update" />
+        <asp:Button ID="Button3" runat="server" OnClick="Button3_Click" Text="Delete" />
+        <asp:Button ID="Button4" runat="server" OnClick="Button4_Click" Text="Clear" />
     </asp:Panel>
 
 
-
+    <br /><br /><br /><br /><br /><br /><br /><br />
 
 </asp:Content>
