@@ -99,7 +99,7 @@ namespace esuspomogiv2.Admin
             }
             catch (Exception ex)
             {
-                ErrorLabel.Text = "SERVER ERROR";
+                ErrorLabel.Text = "SERVER ERROR!!!";
                 System.Diagnostics.Debug.WriteLine(ex.Message);
                 System.Diagnostics.Debug.WriteLine(ex.StackTrace);
             }
@@ -111,7 +111,7 @@ namespace esuspomogiv2.Admin
         protected void Button2_Click(object sender, EventArgs e)
         {
             //edit
-
+            //test
             try
             {
                 SqlConnection con = new SqlConnection(cs);
